@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package proto;
+
+service Propriedade {
+  rpc Property(Empty) returns (PropertyItem);
+  rpc Properties(Empty) returns (stream PropertyItems);
+  rpc All(Empty) returns (stream PropertyAll);
+  rpc PropertiesStream(Empty) returns (stream PropertyItem);
+}
+
+message PropertyItems {
+  repeated PropertyItem items = 1;
+}
+
+message PropertyItem {
+  string entityId = 1;
+  string propertyName = 2;
+  string date = 3;
+  string value = 4;
+}
+
+message PropertyAll {
+  string date = 1;
+  string avg = 2;
+  string max = 3;
+  string min = 4;
+  string name = 5;
+}
+
+message Empty{
+
+}

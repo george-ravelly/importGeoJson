@@ -1,0 +1,19 @@
+{
+  "name": "importgeojsonnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.6.6",
+    "axios": "^0.22.0",
+    "grpc": "^1.24.11",
+    "node-grpc-client": "^1.5.0",
+    "uuid": "^8.3.2"
+  }
+}
